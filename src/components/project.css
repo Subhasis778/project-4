@@ -1,0 +1,45 @@
+.hding{
+    display:flex;
+    justify-content:center;
+    font-size: xx-large;
+    font-weight:800;
+    margin:20px;
+}
+
+.card{
+    height:350px;
+    width:300px;
+    border:2px solid black;
+    padding:10px;
+    background-color: rgb(4, 4, 4);
+    position:static;
+    text-align:center;
+    color:white;
+    margin:20px;
+    margin-bottom: 50px;
+}
+
+.cards{
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+    justify-content:center;
+    margin:10px;
+}
+
+.but{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+.card:hover{
+    padding-top:15px;
+}
+
+.container{
+    background-color: rgb(145, 147, 143);
+}
+
+
+
+    

@@ -1,0 +1,43 @@
+.bottom-container{
+    background-color:black;
+    color:white;
+    padding-bottom: 40px;
+}
+
+.bottom-heading{
+    font-size: xx-large;
+    font-weight: 700;
+    display:flex;
+    justify-content: center;
+    padding:20px;
+}
+
+.info-abt{
+    display:flex;
+    justify-content: center;
+}
+
+.info{
+    height:90px;
+    width:170px;
+    border:2px solid rgb(0, 0, 0);
+    padding:10px;
+    text-align:center;
+}
+
+.info-box{
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+    gap:100px;
+}
+
+.info:hover{
+    padding-top:7px;
+}
+
+.info-btn{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
