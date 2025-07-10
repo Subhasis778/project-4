@@ -1,70 +1,33 @@
+import React from "react";
 import "./skill.css";
-const Skill = () => {
+const skills = () => {
+  const skills = [
+    { name: "HTML", level: 95 },
+    { name: "CSS", level: 85 },
+    { name: "Javascript", level: 70 },
+    { name: "React", level: 70 },
+    { name: "C", level: 90 },
+    { name: "Python", level: 50 },
+  ];
+
   return (
-    <>
-      <section id="skill">
-        <div className="head">Skills</div>
-        <div className="total-progress">
-          <b>Java script</b>
-          <div class="progress">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style={{ width: "70%" }}
-              aria-valuenow="25"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              70%
+    <div className="skills-container">
+      <h2>Skills</h2>
+      <div className="skills-list">
+        {skills.map((skill, index) => (
+          <div key={index} className="skill-item">
+            <div className="skill-header">
+              <span>{skill.name}</span>
+              <span>{skill.level}%</span>
+            </div>
+            <div className="progress-bar">
+              <div className="progress-fill" style={{ width: `45% ` }}></div>
             </div>
           </div>
-          <br />
-          <b>Html</b>
-          <div class="progress">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style={{ width: "90%" }}
-              aria-valuenow="50"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              90%
-            </div>
-          </div>
-          <br />
-          <br />
-          <b>Css</b>
-          <div class="progress">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style={{ width: "80%" }}
-              aria-valuenow="75"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              80%
-            </div>
-          </div>
-          <br />
-          <b>React</b>
-          <div class="progress">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style={{ width: "95%" }}
-              aria-valuenow="100"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              95%
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
+        ))}
+      </div>
+    </div>
   );
 };
 
-export default Skill;
+export default skills;

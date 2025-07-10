@@ -3,7 +3,7 @@
     justify-content:center;
     font-size: xx-large;
     font-weight:800;
-    margin:20px;
+    padding-top:20px;
 }
 
 .card{
@@ -25,6 +25,7 @@
     gap:20px;
     justify-content:center;
     margin:10px;
+    height:100%;
 }
 
 .but{
@@ -33,11 +34,12 @@
     gap:15px;
 }
 .card:hover{
-    padding-top:15px;
+    transform: scale(1.05); 
+    cursor: pointer;
 }
 
 .container{
-    background-color: rgb(145, 147, 143);
+    background-color: rgb(206, 208, 205);
 }
 
 

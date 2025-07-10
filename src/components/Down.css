@@ -32,12 +32,13 @@
     gap:100px;
 }
 
-.info:hover{
-    padding-top:7px;
-}
-
 .info-btn{
     display:flex;
     justify-content:center;
     gap:10px;
+}
+
+.info:hover{
+    transform: scale(1.05); 
+    cursor: pointer;
 }

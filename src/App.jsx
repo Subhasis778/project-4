@@ -19,7 +19,6 @@ function App() {
       <Skills></Skills>
       <hr />
       <Projects></Projects>
-      <br />
       <hr />
       <Btn></Btn>
       <Foot></Foot>

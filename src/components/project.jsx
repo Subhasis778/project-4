@@ -1,6 +1,5 @@
 import "./project.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import img1 from "../assets/logo.svg";
 
 const Project = () => {
   return (

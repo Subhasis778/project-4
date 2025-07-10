@@ -16,19 +16,19 @@ const About = () => {
           <br />
           <br />
           <div className="card-container">
-            <div className="card-about">
+            <div className="card-about4">
               <h5>Clean code</h5>
               <p>
                 Writing maintainable,scalable code that follows best practices
               </p>
             </div>
-            <div className="card-about">
+            <div className="card-about1">
               <h5>Responsive design</h5>
               <p>
                 Creating beautiful,mobile-first designs that work on all devices
               </p>
             </div>
-            <div className="card-about">
+            <div className="card-about2">
               <h5>Performance</h5>
               <p>Optmizing applications for speed and best user experience</p>
             </div>
