@@ -42,3 +42,41 @@
     transform: scale(1.05); 
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .bottom-heading {
+    font-size: x-large;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-abt {
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .info-box {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap:5px;
+  }
+
+  .info {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .info-btn {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .info-btn .btn {
+    width: 200px;
+    text-align: center;
+  }
+}
