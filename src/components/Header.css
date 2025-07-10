@@ -1,73 +1,60 @@
-.hdr-container{
-  color:rgb(188, 98, 98);
-  display:flex;
-  flex-direction:row;
-  gap:20px;
+.hdr-container {
+  color: rgb(188, 98, 98);
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
   justify-content: end;
-  margin:20px;
-  height:150px;
+  margin: 20px;
+  height: 150px;
 }
 
-.heading{
-  color:rgb(146, 45, 45);
+.heading {
+  color: rgb(146, 45, 45);
   font-weight: 900;
   font-size: 20px;
-  width:100px;
-  margin:20px;
+  width: 100px;
+  margin: 20px;
 }
 
-.port{
+.port {
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  padding: 50px;
+}
+
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    flex-direction: column !important;
+    align-items: center;
     background-color: rgb(0, 0, 0);
-}
-*{
-  margin:0;
-  padding:0;
-}
-
-/* .navbar{
-  width:100%;
-  display:flex;
-  justify-content: end;
-} */
-
-.navbar{
-  padding:50px;
-}
-
-@media (max-width: 768px) {
-  .hdr-container {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 15px;
+    padding: 10px 0;
   }
 
-  .heading {
-    font-size: 1.25rem;
-    margin: 10px;
-  }
-
-  .navbar {
-    padding: 0.75rem 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hdr-container {
+  .nav-link {
     padding: 10px;
-    gap: 10px;
-  }
-
-  .heading {
-    font-size: 1.1rem;
-    margin: 5px;
   }
 
   .navbar {
-    padding: 0.5rem;
+    padding: 20px;
+  }
+
+  .navbar-collapse {
+    background-color: rgb(0, 0, 0);
   }
 }
 
 .nav-link:hover {
-  color: rgb(252, 211, 5) !important;
+  color: yellow 
 }
