@@ -15,7 +15,9 @@ function App() {
         <Header></Header>
         <Image></Image>
       </div>
+      <hr />
       <About></About>
+      <hr />
       <Skills></Skills>
       <hr />
       <Projects></Projects>
