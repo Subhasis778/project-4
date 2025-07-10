@@ -1,81 +1,113 @@
-.heading{
-    width:100%;
-    display:flex;
-    justify-content:center;
-    color:hsl(0, 0%, 0%);
-    font-size:xx-large;
-    font-weight:700;
+/* 👇 Your original CSS — preserved as-is */
+
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: hsl(0, 0%, 0%);
+  font-size: xx-large;
+  font-weight: 700;
 }
 
-.hd-box{
-    height:350px;
-    background-color: rgb(211, 209, 209);
+.hd-box {
+  height: 350px;
+  background-color: rgb(211, 209, 209);
 }
 
-.text{
-   text-align: center;
-   padding-left: 60px;
-   padding-right: 60px;
-   background: #fff;
-   background-color:rgb(211, 209, 209);
+.text {
+  text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  background: #fff;
+  background-color: rgb(211, 209, 209);
 }
 
-h5{
-    text-align:center;
+h5 {
+  text-align: center;
 }
 
-.card-container{
-    display:flex;
-    flex-direction:row;
-    justify-content: center;
-    gap:20px;
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
 }
 
-.card-about2{
-    height:130px;
-    width:250px;
-    padding:10px;
-    padding-top: 10px;
-    border:2px solid rgb(10, 10, 10);
-    border-radius: 10px;
-    background-color: rgb(240, 232, 127);
-    color:rgb(7, 7, 7);  
+.card-about2 {
+  height: 130px;
+  width: 250px;
+  padding: 10px;
+  padding-top: 10px;
+  border: 2px solid rgb(10, 10, 10);
+  border-radius: 10px;
+  background-color: rgb(240, 232, 127);
+  color: rgb(7, 7, 7);
 }
 
-.card-about2:hover{
-    background-color: rgb(225, 213, 34);
-    color:rgb(0, 0, 0);
+.card-about2:hover {
+  background-color: rgb(225, 213, 34);
+  color: rgb(0, 0, 0);
 }
 
-.card-about4{
-    height:130px;
-    width:250px;
-    padding:10px;
-    padding-top: 10px;
-    border:2px solid rgb(10, 10, 10);
-    border-radius: 10px;
-    background-color: rgb(245, 153, 153);
-    color:rgb(7, 7, 7); 
+.card-about4 {
+  height: 130px;
+  width: 250px;
+  padding: 10px;
+  padding-top: 10px;
+  border: 2px solid rgb(10, 10, 10);
+  border-radius: 10px;
+  background-color: rgb(245, 153, 153);
+  color: rgb(7, 7, 7);
 }
 
-.card-about4:hover{
-    background-color: rgb(234, 64, 64);
-    color:rgb(0, 0, 0);
+.card-about4:hover {
+  background-color: rgb(234, 64, 64);
+  color: rgb(0, 0, 0);
 }
 
-
-.card-about1{
-    height:130px;
-    width:250px;
-    padding:10px;
-    padding-top: 10px;
-    border:2px solid rgb(10, 10, 10);
-    border-radius: 10px;
-    background-color: rgb(161, 245, 245);
-    color:rgb(7, 7, 7);
+.card-about1 {
+  height: 130px;
+  width: 250px;
+  padding: 10px;
+  padding-top: 10px;
+  border: 2px solid rgb(10, 10, 10);
+  border-radius: 10px;
+  background-color: rgb(161, 245, 245);
+  color: rgb(7, 7, 7);
 }
 
-.card-about1:hover{
-    background-color: rgb(8, 245, 245);;
-    color:rgb(8, 8, 8);
+.card-about1:hover {
+  background-color: rgb(8, 245, 245);
+  color: rgb(8, 8, 8);
+}
+
+/* ✅ Responsive Additions ONLY (Nothing changed above) */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-about1,
+  .card-about2,
+  .card-about4 {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .hd-box {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .heading {
+    font-size: x-large;
+    flex-direction: column;
+    text-align: center;
+  }
 }
